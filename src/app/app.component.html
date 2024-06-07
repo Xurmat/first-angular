@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<br>
+
+<h3>Clicked cart title is {{cartTitle}}</h3>
+<!--  -->
+<br>
+<div class="cart-container">
+    <app-cart title = 'Build your first angular app' (myTitleChange)="handleClick($event)" Desc="Work through a full tutorial to create your first application." footer="Homes App Tutorial">
+    </app-cart>
+    <app-cart title="What is Angular ?" (myTitleChange)="handleClick($event)" Desc="Get a high-level overview of the Angular platform." footer="Platform overview">
+    </app-cart>
+    <app-cart title="Learn and Explore" (myTitleChange)="handleClick($event)" Desc="Learn about the fundamental design concepts and architecture of Angular applications." footer="Introduction to Angular concepts">
+    </app-cart>
+    <app-cart title="Set up your environment" (myTitleChange)="handleClick($event)" Desc="Set up your local environment for development with the Angular CLI."  footer="Local setup">
+    </app-cart>
+</div>
